@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="./images/rps.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Rock Paper Scissors</h1>
+      <p class="round">Round 1</p>
+      <p class="result">DRAW</p>
+    </header>
+    <section class="game">
+      <div class="container">
+        <div class="boxes">
+          <div class="box computer-box">✊🏻</div>
+          <div class="box my-box">✊🏻</div>
+        </div>
+        <button class="play">Play</button>
+        <div class="column">
+          <p>Choose an option</p>
+          <div class="chooser">
+            <p class="item rock-item">🪨</p>
+            <p class="item paper-item">📄</p>
+            <p class="item scissors-item">✂️</p>
+          </div>
+        </div>
+      </div>
+      <div class="score-card">
+        <p class="score-head">Computer's Score:</p>
+        <p class="score computer-score">0</p>
+        <br />
+        <p class="score-head">Your Score:</p>
+        <p class="score my-score">0</p>
+      </div>
+      <h2 class="win-text">You Won</h2>
+    </section>
+    <footer>Made with ❤️ by Manmeet</footer>
+  </body>
+  <script src="./app.js"></script>
+</html>

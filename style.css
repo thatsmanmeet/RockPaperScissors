@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  overflow: hidden;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.header-title {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.round {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.result {
+  display: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: black;
+}
+
+.section {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.boxes {
+  display: flex;
+}
+
+.box {
+  padding: 30px;
+  height: 200px;
+  width: 50%;
+  font-size: 5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.computer-box {
+  transform: rotate(90deg);
+}
+
+.my-box {
+  transform: rotate(-90deg);
+}
+
+.container {
+  padding: 30px;
+}
+
+.column {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.chooser {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  padding: 10px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.6);
+}
+
+.score-card {
+  padding: 2rem;
+  width: 100%;
+  background: lightgreen;
+  text-align: center;
+}
+
+.score-card p {
+  display: inline;
+  color: black;
+  font-weight: bold;
+}
+
+.score-head {
+  font-size: 1.5rem;
+}
+
+.score {
+  font-size: 1.7rem;
+}
+
+.play {
+  display: block;
+  text-align: center;
+  background-color: rgb(118, 246, 118);
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 30%;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.win-text {
+  display: none;
+  margin: 1.5rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer {
+  padding: 0.8rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  margin: 5px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .header-title {
+    font-size: 2rem;
+  }
+  .box {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes shakeComputerHand {
+  0% {
+    transform: rotate(90deg) translate(0px);
+  }
+  25% {
+    transform: rotate(90deg) translate(-15px);
+  }
+  50% {
+    transform: rotate(90deg) translate(0px);
+  }
+  75% {
+    transform: rotate(90deg) translate(-15px);
+  }
+  100% {
+    transform: rotate(90deg) translate(0px);
+  }
+}
+
+@keyframes shakePlayerHand {
+  0% {
+    transform: rotate(-90deg) translate(0px);
+  }
+  25% {
+    transform: rotate(-90deg) translate(15px);
+  }
+  50% {
+    transform: rotate(-90deg) translate(0px);
+  }
+  75% {
+    transform: rotate(-90deg) translate(15px);
+  }
+  100% {
+    transform: rotate(-90deg) translate(0px);
+  }
+}
