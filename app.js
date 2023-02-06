@@ -10,6 +10,7 @@ const playButton = document.querySelector(".play");
 const optionsColumn = document.querySelector(".column");
 const winText = document.querySelector(".win-text");
 const result = document.querySelector(".result");
+const themeSwitcher = document.querySelector(".theme-switch");
 
 let roundNumber = 1;
 let computerCurrentScore = 0;
@@ -139,3 +140,26 @@ playButton.addEventListener("click", () => {
   optionsColumn.style.display = "flex";
   winText.style.display = "none";
 });
+
+// Theme
+
+themeSwitcher.addEventListener("click", () => {
+  document.body.classList.toggle("theme");
+  if (document.body.classList.contains("theme")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+});
+
+function loadTheme() {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme == "light") {
+    document.body.classList.add("theme");
+  } else {
+    document.body.classList.remove("theme");
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+window.onload = loadTheme();
