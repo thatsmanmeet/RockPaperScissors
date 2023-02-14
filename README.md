@@ -8,9 +8,13 @@ It is a classic Rock Paper Scissors game.
 - Javascript
 - Google Fonts
 
-## ℹ How to Play ?
+## ℹ️ How to Play ?
 
-This game have 10 rounds and you can play it by clicking on the green play button and then clicking on one of three options like rock (🪨), paper (📄) or scissors (✂️).
+This game have 10 rounds and you can play it by clicking on the green play button and then clicking on one of three options i.e.
+
+- Rock (🪨)
+- Paper (📄)
+- Scissors (✂️).
 
 ## 🕹️ Play the Game
 You can play the game by visiting this [link](https://thatsmanmeet.github.io/RockPaperScissors).
